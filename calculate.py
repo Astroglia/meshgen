@@ -18,4 +18,7 @@ def generate_x_y(offsets, radii):
         oi = oi + 2
 
     solution = solve( equations, [x, y] )
-    return solution
+    list_soln = []
+    for i in solution:
+        list_soln.append( list(i) )
+    return list_soln
